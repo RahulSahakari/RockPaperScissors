@@ -21,16 +21,19 @@ for i in range(num):
                 print("You Choose Scissors")
                 print("Bot Choose Scissors")
             print("Its a Draw")
+#             if you choose Rock
         elif rps == 1 and bot_rps == 3:
             print(f"You Choose Rock")
             print(f"Bot Choose Scissors")
             print("You Won")
             your_score+=1
+            i
         elif rps == 1 and bot_rps == 2:
             print(f"You Choose Rock")
             print(f"Bot Choose Paper")
             print("You Lost")
             bot_score += 1
+#             if you choose Paper
         elif rps == 2 and bot_rps == 1:
             print(f"You Choose Paper")
             print(f"Bot Choose Rock")
@@ -41,6 +44,7 @@ for i in range(num):
             print(f"Bot Choose Scissors")
             print("You Lost")
             bot_score += 1
+#             if you choose Scissors
         elif rps == 3 and bot_rps == 1:
             print(f"You Choose Scissors")
             print(f"Bot Choose Rock")
@@ -62,5 +66,5 @@ if your_score > bot_score:
     print("Congrats, You Win..")
 if your_score == bot_score:
     print("It was a draw.Better luck next time")
-if your_score > bot_score:
+if your_score < bot_score:
     print("You Lost.Better luck next time")
